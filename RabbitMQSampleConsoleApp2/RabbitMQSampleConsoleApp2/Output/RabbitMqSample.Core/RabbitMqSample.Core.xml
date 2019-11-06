@@ -4,5 +4,48 @@
         <name>RabbitMqSample.Core</name>
     </assembly>
     <members>
+        <member name="T:RabbitMqSample.Core.Publisher">
+            <summary>
+            Defines the <see cref="T:RabbitMqSample.Core.Publisher" />
+            </summary>
+        </member>
+        <member name="F:RabbitMqSample.Core.Publisher.rabbitMqservice">
+            <summary>
+            Defines the rabbitMqservice
+            </summary>
+        </member>
+        <member name="F:RabbitMqSample.Core.Publisher.queueName">
+            <summary>
+            Defines the queueName
+            </summary>
+        </member>
+        <member name="M:RabbitMqSample.Core.Publisher.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RabbitMqSample.Core.Publisher"/> class.
+            </summary>
+            <param name="queueName">The queueName<see cref="T:System.String"/></param>
+        </member>
+        <member name="M:RabbitMqSample.Core.Publisher.Publish(System.String)">
+            <summary>
+            The Publish
+            </summary>
+            <param name="message">The message<see cref="T:System.String"/></param>
+        </member>
+        <member name="T:RabbitMqSample.Core.RabbitMqService">
+            <summary>
+            Defines the <see cref="T:RabbitMqSample.Core.RabbitMqService" />
+            </summary>
+        </member>
+        <member name="F:RabbitMqSample.Core.RabbitMqService.hostName">
+            <summary>
+            Defines the hostName
+            </summary>
+        </member>
+        <member name="M:RabbitMqSample.Core.RabbitMqService.GetConnection">
+            <summary>
+            The GetConnection
+            </summary>
+            <returns>The <see cref="T:RabbitMQ.Client.IConnection"/></returns>
+        </member>
     </members>
 </doc>
